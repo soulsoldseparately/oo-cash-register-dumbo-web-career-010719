@@ -13,13 +13,12 @@ class CashRegister
     @total += price * quantity
     puts "price = #{price}, quantity = #{quantity}"
     if @discount > 0
-      self.apply_discount
-    end
+      discounted_total = @total * self.apply_discount
   #  @total += @subtotal #self.apply_discount
     #self.apply_discount
   end
 
-  def apply_discount
-    @total * (1 - @discount/100)
+  def apply_discount(@total)
+     1 - @discount/100
   end
 end

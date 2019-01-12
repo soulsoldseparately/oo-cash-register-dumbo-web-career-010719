@@ -9,7 +9,7 @@ class CashRegister
 
 
   def add_item(title, price, quantity=(1))
-    puts "discount = #{self.apply_discount}"
+    puts "discount% = #{1 - self.apply_discount}"
     @total += price * quantity
     puts "total = #{@total}"
     puts "price = #{price}, quantity = #{quantity}"

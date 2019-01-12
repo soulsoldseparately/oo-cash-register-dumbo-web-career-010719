@@ -11,6 +11,7 @@ class CashRegister
 
   def add_item(title, price, quantity=(1))
     @total += price * quantity
+    puts "total = #{@total}"
     puts "price = #{price}, quantity = #{quantity}"
     if @discount > 0
       discounted_total = @total * self.apply_discount

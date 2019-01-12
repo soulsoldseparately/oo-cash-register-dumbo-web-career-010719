@@ -14,6 +14,7 @@ class CashRegister
     puts "price = #{price}, quantity = #{quantity}"
     if @discount > 0
       discounted_total = @total * self.apply_discount
+    end
   #  @total += @subtotal #self.apply_discount
     #self.apply_discount
   end

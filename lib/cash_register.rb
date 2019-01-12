@@ -3,14 +3,14 @@ class CashRegister
   attr_accessor :total, :discount
 
   #def initialize(total=0, discount=(20))
-  def initialize(total=0, *discount)
+  def initialize(total=0, *discount=20)
     @total = total
     @discount = 20
   end
 
 
   def add_item(title, price, quantity=(1))
-    puts "discount% = #{1 - @discount/100}"
+    puts "discount = #{@discount/100}%"
     @total += price * quantity
     puts "total = #{@total}"
     puts "price = #{price}, quantity = #{quantity}"

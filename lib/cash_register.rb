@@ -22,6 +22,6 @@ class CashRegister
   end
 
   def apply_discount
-    return (1 - discount/100)
+    return (1 - (@discount / 100))
   end
 end

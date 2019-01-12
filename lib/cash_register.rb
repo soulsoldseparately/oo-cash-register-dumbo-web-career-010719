@@ -13,7 +13,7 @@ class CashRegister
     puts "total = #{@total}"
     puts "price = #{price}, quantity = #{quantity}"
     if @discount > 0
-      discounted_total = @total * @apply_discount
+      discounted_total = @total * self.apply_discount
       puts "discounted_total = #{discounted_total}"
     end
   #  @total += @subtotal #self.apply_discount

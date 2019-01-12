@@ -11,8 +11,8 @@ class CashRegister
 
   def add_item(title, price, quantity=(1))
     @subtotal = price * quantity
-    @discounted_subtotal = @subtotal * (100 - @discount)/100
-    @total += @discounted_subtotal #self.apply_discount
+
+    @total += @subtotal #self.apply_discount
     #self.apply_discount
   end
 

@@ -17,6 +17,6 @@ class CashRegister
   end
 
   def apply_discount
-    @subtotal * (1 - @discount/100)
+    return @subtotal * (1 - @discount/100)
   end
 end
